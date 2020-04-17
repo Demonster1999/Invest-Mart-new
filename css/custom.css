@@ -55,8 +55,9 @@ body::-webkit-scrollbar {
   position:absolute;
   z-index: 30;
   text-align:center;
-  top:40%;
-  margin:auto;
+  top:30%;
+  margin:auto; 
+  padding: auto;
 /*
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
@@ -69,7 +70,7 @@ body::-webkit-scrollbar {
 .carousel-image{
   height:inherit;
   width: auto;
-  opacity: 0.5;
+  opacity: 0.3;
   margin: auto;
   padding: auto;
   object-fit: cover;
@@ -78,19 +79,108 @@ body::-webkit-scrollbar {
   .carousel-image{ 
     height: 568px;
   }
+  .carousel-caption {
+    position: absolute;
+    z-index: 30;
+    text-align: center;
+    top: 30%;
+    margin: auto;
+    padding: auto;
+    /*
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+*/
+  }
+
+}
+.pos{
+  position: absolute;
+  margin: auto ;
+  padding: auto ;
+  z-index: 0 ;
+  right:46%;
+  bottom: 45%;
 }
 
 /* Portrait */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .carousel-image {
     height: 568px;
   }
+  .carousel-caption {
+    position: absolute;
+    z-index: 30;
+    text-align: center;
+    top: 30%;
+    margin: auto;
+    padding: auto;
+    /*
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+*/
+  }
+  .pos {
+    
+    right: 20px;
+    bottom: 2%;
+  }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .carousel-image {
+    height: 768px;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    z-index: 30;
+    text-align: center;
+    top: 30%;
+    margin: auto;
+    padding: auto;
+    /*
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+*/
+  }
+
+  .pos {
+
+    right: 45%;
+    bottom: 35%;
+  }
+
 }
 
 /* Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
 
   .carousel-image {
-    height: 320px;
+    height: 480px;
+  }
+    .pos {
+      
+      right: 20px;
+      bottom: 5px ;
+    }
+}
+
+
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+  .carousel-image {
+    height: 1024px;
+  }
+
+  .pos {
+
+    right: 47%;
+    bottom: 45%;
   }
 }
