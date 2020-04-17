@@ -26,7 +26,7 @@ body::-webkit-scrollbar {
   background-color: rgba(255,255,255,0.45);
 }
 
-.nav-link2{
+a.nav-link2{
   font-weight: bolder;
   font-size: 20px;
   color:#484971;
@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
   width:5%;
   transition: .5s;
 }
- .nav-link2:hover{
+ a.nav-link2:hover{
  color: hsl(351, 69%, 58%);
   font-weight: 900;
    font-size: 25px;
@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
  width:100%;
 
 }
- a.nav-link:active {
+.nav-item a.nav-link:active {
    color: hsl(351, 69%, 58%);
    font-weight: 900;
    font-size: 25px;
@@ -221,4 +221,11 @@ body::-webkit-scrollbar {
     right: 47%;
     bottom: 45%;
   }
+}
+.full_screen{
+  position:relative;
+  height: auto;
+  width:100%;
+  overflow:hidden;
+  margin-top: 200px;
 }
