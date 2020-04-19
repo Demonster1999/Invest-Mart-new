@@ -18,9 +18,11 @@
   <title>Hello, world!</title>
 </head>
 
-<body style = "font-family : ROBOTO MEDIUM">
+<body style = "font-family : ROBOTO MEDIUM" onload="window.addEventListener('load', fadeEffect);">
   <!-- preloader start -->
-
+<div class="preloader" style="opacity: 0;">
+  <img src="static/imgs/preloaderspin.svg" class = "filler-green" alt="spinner">
+</div>
   <!-- preloader end  -->
 
   <!-- nav start -->
@@ -436,7 +438,30 @@ traders. Make investments based on high-yielding , you believe in.
     integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
     crossorigin="anonymous"></script>
   <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
-  <script src=""></script>
+  <script>
+    const preloader = document.querySelector('.preloader');
+    const fadeEffect = setInterval(() => {
+      // if we don't set opacity 1 in CSS, then
+      // it will be equaled to "" -- that's why
+      // we check it, and if so, set opacity to 1
+      if (!preloader.style.opacity) {
+        preloader.style.opacity = 1;
+      }
+      if (preloader.style.opacity > 0) {
+        preloader.style.opacity -= 0.1;
+        preloader.classList.add("loaded");
+      } else {
+        clearInterval(fadeEffect);
+      }
+
+    }, 100);
+
+    function redirect() {
+      var url = "signup.php";
+      window.location(url);
+    }
+
+  </script>
 </body>
 
 </html>
