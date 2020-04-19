@@ -75,38 +75,39 @@
   <!-- nav End  -->
 
 <!-- Carousel  -->
-<div id="carouselExampleFade " class="carousel slide carousel-fade" data-ride="carousel">
+<div id="carouselExampleFade " class="carousel slide carousel-fade" style = " height : 640px" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100 carousel-image" src="static/imgs/market1.jpg" alt="First slide">
+      <img  src="static/imgs/market1.jpg" alt="First slide">
       <div class="carousel-caption">
         <h2 style="color:#8C001A">Welcome To</h2>
         <h1 style=" color: #8C001A; font-weight:bolder; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"> SMART INVEST</h1>
-        <h3  style="color:#484971;">Market Research</h1>
-        <p class="h4" style="color:#484971">With over years of experience helping
-        traders with our service.
+        <h3 style="color:#484971;"><b>Market Research </b> </h1>
+        <p class="h4" style="color:#484971"> <i>With over years of experience helping
+            traders with our service.</i>
        
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 carousel-image" src="static/imgs/market2.jpg" alt="Second slide">
+      <img src="static/imgs/market2.jpg" alt="Second slide">
       <div class="carousel-caption">
 
-        <h1 style="color: #8C001A"><b>We never give just advice</b></h1>
-        <h2 style="color:#484971;"><b>We perpare your mind </b></h2>
-        <h3 style="color:#484971;"><b>to be the Leader</b></h3>
+        <h1 class="h1 p-2 " style="color: #8C001A"><b>We never give just advice</b></h1>
+        <h3 class="h3 p-2 " style="color:#484971;"><b>We perpare your mind </b></h2>
+        <h3 class="h3 p-2 " style="color:#484971;"><i>'to be the  Leader'</i></h3>
        
-        <!--  <h3>Chicago</h3>
-          <p>Thank you, Chicago - A night we won't forget.</p> -->
+      
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 carousel-image" src="static/imgs/market3jpg.jpg" alt="Third slide">
-      <div class="carousel-caption">
+      <img src="static/imgs/market3jpg.jpg" alt="Third slide">
+      <div class="carousel-caption text-center">
         <h1 style="color: #8C001A"><b>The Most Importantly</b></h1>
         <h2 style="color:#484971;"><b>We provide you a chance</b></h2>
         <h3 style="color:#484971;"><b>To Test Us</b></h3>
-       
+        <center>
+       <hr style="background-color:#fff ; width : 60%; height:2px; ">
+        </center>
         <p class="h4" style="color: #8C001A"><b>Connect With the Most trusted advisory</b></h2>
         
         <!-- color #97cc5e -->
@@ -116,8 +117,15 @@
 
       
     </div>
-  <a   class="btn btn-danger   btn-lg  pos" style="color:#8C001A ">
-      <span class="material-icons md-18 ">JOIN-US   group_add</span>
+  <button class="btn 
+   pos p-2 m-2 " title="join us " style="color:#8C001A ">
+   <div class="">
+     JOin us 
+      
+   </div>   
+  
+
+     
       
     </button>
   </div>
@@ -137,11 +145,10 @@
 
 <!-- WHY SMART INVEST -->
 
-<div  style="height:auto ;width:100%">
-<div style ="">
-    <p class = "h1  p-5 m-5" style= "font-family:fantasy ; color:#8C001A; border-bottom:#8C001A dashed ;width:40%">
-      WHY SMART INVEST ?
-    </p>
+<div  class = "container-fluid m-5  " style="height:auto ;">
+<div >
+    <h1 style="color: #8C001A; font-weight: bold; font-family:fantasy;" class=" m-5 p-2">Why Smart Invest ?</h1>
+    <hr style="background-color:#680c45; height: 3px; width: 20%; margin-left:50px ">
   <div class="row ">
     <div class="col-md-4 m-auto">
       <div class="card container2 mt-5" style="width: 20rem; margin:auto; padding : 20px">
@@ -224,12 +231,14 @@ traders. Make investments based on high-yielding , you believe in.
 
 </div>
 
+
+
 <!-- why smart invest end  -->
 
 
 
 <!-- features -->
-<div class = "full_screen mb.-5  " style="background-color:#f1f1f1 ;color : #484971;" >
+<div class = " container-fluid my-5 p-2 " style="background-color:#f1f1f1 ;color : #484971;" >
  
 
 <h1 style="color: #8C001A; font-weight: bold; font-family:fantasy;" class=" m-5 p-2">Why Choose Us ?</h1>
@@ -339,65 +348,82 @@ traders. Make investments based on high-yielding , you believe in.
 <!-- End features  -->
 
 <!-- Contact Form  -->
-<div class="container mt-5  ">
-<div class="row border-bottom border-danger">
-  <div class="col-md-12 m-4 ">
-    <h3 style = "color:#8C001A ; font-family:fantasy" class="mx-auto">
-       Submit any queries/complaints here
+<div class="container-fluid my-5   ">
+   <h1 style="color: #8C001A; font-weight: bold; font-family:fantasy;" class=" m-5 p-2">Queries/feedback Form </h1>
+   <hr style="background-color:#680c45; height: 3px; width: 20%; margin-left:50px ">
+   <div class="container my-5 ">
+     <div class="form">
+  <div class="form-inline ">
+<div class="form-group">
+  <label for="exampleInputName2" class="bmd-label-floating ">Name</label>
+  <input type="text" class="form-control " id="exampleInputName2">
+</div>
+<span class="form-group bmd-form-group px-3 mx-3">
 
-    </h3>
+
+</span>
+
+<div class="form-group">
+  <label for="exampleInputEmail2" class="bmd-label-floating  ">Email</label>
+  <input type="email" class="form-control " id="exampleInputEmail2">
+</div>
+
+</div>
+<div class="form-group w-auto">
+  <label for="exampleTextarea" class="bmd-label-floating">Message</label>
+  <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+</div>
+
+<div class="form-group text-right">
   
-  <form method="post" action="contactmail.php">
-    <div class="col-sm-7">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input style="border:#8C001A;" class="form-control" id="name" name="name" placeholder="Name" type="text"
-            required="">
-        </div>
-      
-        <div class="col-sm-6 form-group">
-          <input style="border:#8C001A" class="form-control" id="email" name="email" placeholder="Email" type="email"
-            required="">
-        </div>
-      </div>
-      <textarea style="border:#8C001A" class="form-control" id="comments" name="comments" placeholder="Comment"
-        rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-raised btn-secondary  Sendbtn" type="submit">SUBMIT <span class="material-icons">
-            send
-          </span></button>
-        </div>
-      </div>
-    </div>
-  </form>
+  <button type="button" class="btn p-2 btn-success " > SEND
+    <i class= "material-icons">
+      send
+    </i>
+    </button>
 </div>
+
 </div>
-<h3 style="color: #8C001A" class="text-center mt-2">Contact us </h3>
+     </div>
+    
+
+  
+
+   </div>
+<!-- Contact Form End  -->
+
+<!-- contact details -->
+<div class="container-fluid py-5" style="background-color : #f1f1f1;">
+<h1 style="color: #8C001A; font-weight: bold; font-family:fantasy;" class=" m-5 p-2">Contact us</h1>
+<hr style="background-color:#680c45; height: 3px; width: 20%; margin-left:50px ">
 <div class="row text-center mt-5" style="color:#484971">
-  
-<div class="col-md-4">
-  <h4><span class="material-icons">
-      location_on
-    </span> <br> Bhopal, MP</h4>
-</div>
-<div class="col-md-4">
-  <h4><span class="material-icons">
-    call
-  </span> <br> 7873092398</h4>
-</div>
-<div class="col-md-4">
-  <h4></span> <span class="material-icons">
-      mail
-    </span> <br> info@thesmartinvest.in</h4>
-</div>
+
+  <div class="col-md-4">
+    <h4><span class="material-icons p-2 mb-2 " style = "font-size : 50px;">
+        location_on
+      </span> <br> Bhopal, MP</h4>
+  </div>
+  <div class="col-md-4">
+    <h4><span class="material-icons p-2 mb-2" style="font-size : 50px;">
+        call
+      </span> <br> 7873092398</h4>
+  </div>
+  <div class="col-md-4">
+    <h4></span> <span class="material-icons mb-2" style="font-size : 50px;">
+        mail
+      </span> <br> info@thesmartinvest.in</h4>
+  </div>
 
 </div>
 
 </div>
+<!-- Contact Details End  -->
 
 
-<!-- Contact Form  -->
+
+
+
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
