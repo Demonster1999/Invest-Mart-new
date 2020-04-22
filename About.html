@@ -15,12 +15,14 @@
     integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
    
     <link rel="stylesheet" href="static/css/custom.css">
-  <title>Hello, world!</title>
+  <title>about: Invest-Smart</title>
 </head>
 
-<body style = "font-family : ROBOTO MEDIUM">
+<body style = "font-family : ROBOTO MEDIUM" onload="window.addEventListener('load', fadeEffect);">
   <!-- preloader start -->
-
+<div class="preloader" style="opacity: 1;">
+  <img src="static/imgs/preloaderspin.svg" class="filler-green" alt="spinner">
+</div>
   <!-- preloader end  -->
 
   <!-- nav start -->
@@ -135,18 +137,18 @@ profit.
 
 
 
-  <div class=" container-fluid text-justify my-5 ourteam-text2 " style="  color:#484971;
+  <div class=" container-fluid text-justify my-5 ourteam-text2  " style="  color:#484971;
   ;font-weight: 700; background-color:#f1f1f1;">
   <center>
-  <h1 style="color: #97cc5e;"  > Our Values </h1>
+  <h1 style="color: #97cc5e; font-family:cursive;" class="p-5"  > Our 'Values' </h1>
   </center>
   <div class="row">
     <div class="col-md-6 my-5">
     <h2 style="color:#8C001A ;" class="text-center">
-      Our Mission
+      Our <u> Mission  </u>
     </h2>
     <p class="ourteam-text p-2 ">
-      To provide an information resource to the business community across the globe
+      To provide an information resource to the business community across the globe.
     </p>
     
     
@@ -155,7 +157,7 @@ profit.
     
     </div>
     <div class="col-md-6 my-5" >
-      <h2 style="color:#8C001A ;" class="text-center">Our Vision</h2>
+      <h2 style="color:#8C001A ;" class="text-center">Our <u>Vision</u></h2>
       <p class=" ourteam-text p-2 ">
         To have a reliable presence around the globe by catering service to Traders of all TRADING EXCHANGE.
       </p>
@@ -180,7 +182,27 @@ profit.
     integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
     crossorigin="anonymous"></script>
   <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
-  <script src=""></script>
+  <script>
+    const preloader = document.querySelector('.preloader');
+    const fadeEffect = setInterval(() => {
+      // if we don't set opacity 1 in CSS, then
+      // it will be equaled to "" -- that's why
+      // we check it, and if so, set opacity to 1
+      if (!preloader.style.opacity) {
+        preloader.style.opacity = 1;
+      }
+      if (preloader.style.opacity > 0) {
+        preloader.style.opacity -= 0.1;
+        preloader.classList.add("loaded");
+      } else {
+        clearInterval(fadeEffect);
+      }
+
+    }, 100);
+
+
+
+  </script>
 </body>
 
 </html>
