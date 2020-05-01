@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Material Design for Bootstrap fonts and icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+  <!-- Material Design for Bootstrap CSS -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="static/css/custom.css">
+  <title>Services: Invest-Smart</title>
+</head>
+
+<body style = "font-family : ROBOTO MEDIUM" onload="window.addEventListener('load', fadeEffect);">
+  <!-- preloader start -->
+<div class="preloader" style="opacity: 1;">
+  <img src="static/imgs/preloaderspin.svg" class="filler-green" alt="spinner">
+</div>
+  <!-- preloader end  -->
+
+  <!-- nav start -->
+
+  <nav class="navbar navbar-expand-lg fixed-top   text-center   ">
+     <a class="navbar-brand" href="#">
+       <img src="static/imgs/smartlogo.png"  height = "50"
+         class="d-inline-block align-top" alt="">
+      
+     </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon material-icons">menu</span>
+  </button>
+
+    <div class="collapse navbar-collapse justify-content-end  " id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item active mx-2 p-2">
+          <a class="nav-link2" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item mx-2  p-2">
+          <a href="About.html" class="nav-link2">About</a>
+        </li>
+        <li class="nav-item mx-2 p-2"><a href="services.html" class="nav-link2 ">Services</a></li>
+        <li class="nav-item mx-2 p-2"><a href="Account.html" class="nav-link2">Account</a></li>
+        <li class="nav-item mx-2 p-2"><a href="pricing.html" class="nav-link2">Pricing</a> </li>
+        <li class="nav-item mx-2 p-2">
+          <a class="nav-link2 " href="kyc.html">KYC</a>
+        </li>
+        <li class="nav-item mx-2 p-2 dropdown">
+          <a class="nav-link2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu" style= "background-color : rgba(255,255,255,0.45)" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Live Market</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Trade</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Portfolio</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">My Profile</a>
+          </div>
+        </li>
+        
+      </ul>
+      
+    </div>
+  </nav>
+  
+  <!--  services Banner  -->
+
+  <div class="top-wrapper p-5 text-center ">
+    
+    <h1 >
+      Our Services  
+    </h1>
+    
+  </div>
+  
+  <!-- services Provided 
+   -->
+   <div class="services">
+     <div>
+       <h2> <img src="static/imgs/icons/equity.png" width="5px" alt=""> Equity </h2>
+
+     </div>
+   </div>
+
+
+    
+     
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+    integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+    integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+    crossorigin="anonymous"></script>
+  <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>
+  <script>
+    const preloader = document.querySelector('.preloader');
+    const fadeEffect = setInterval(() => {
+      // if we don't set opacity 1 in CSS, then
+      // it will be equaled to "" -- that's why
+      // we check it, and if so, set opacity to 1
+      if (!preloader.style.opacity) {
+        preloader.style.opacity = 1;
+      }
+      if (preloader.style.opacity > 0) {
+        preloader.style.opacity -= 0.1;
+        preloader.classList.add("loaded");
+      } else {
+        clearInterval(fadeEffect);
+      }
+
+    }, 100);
+
+
+
+  </script>
+</body>
+
+</html>
